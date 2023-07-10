@@ -1,3 +1,44 @@
+<?php
+session_start();
+include("connection.php");
+include("function.php");
+
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+  //something is entered and will fetch
+  $Uname = $_POST['uname'];
+  $Password = $_POST['psw'];
+
+  if (!empty($Uname) && !empty($Password)) {
+    //read from database
+    $query = "SELECT * FROM users where UNAME = '$Uname' limit 1";
+
+    $result = mysqli_query($con, $query);
+
+    if ($result) {
+      if ($result && mysqli_num_rows($result) > 0) { 
+        $user_data = mysqli_fetch_assoc($result);
+
+        if (($Uname) === "ADMIN" && ($Password) === "ADMIN") {
+          $_SESSION['SNO'] = $user_data['SNO'];
+          header("Location: index.php");
+          die;
+        }
+        if ($user_data['PASSWORDS'] === $Password) {
+          $_SESSION['SNO'] = $user_data['SNO'];
+          header("Location: index.php");
+          die;
+        }
+      }
+    }
+    echo
+      "<script> alert('Wrong Email or Password') </script>";
+  } else {
+    echo
+      "<script> alert('Wrong Email or Password') </script>";
+  }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -133,7 +174,8 @@
 
     <h2 class="fs-5 text-center my-5">Hi Stingrays! Login Here. </h2>
     <div class="memacontainer mt-5 p-1">
-        <form action="/action_page.php" method="post">
+
+        <form  method="post">
             <div class="imgcontainer my-4">
                 <img src="images/img-account.png" alt="Avatar" class="avatar">
             </div>
@@ -146,7 +188,7 @@
                 <input class="center-block p-2" type="password" placeholder="Enter Password" name="psw" required>
 
                 <div class="d-grid gap-2 d-md-block text-center my-5">
-                    <button class="btn btn-primary" type="button">Login</button>
+                    <button class="btn btn-primary" type="submit">Login</button>
                     <button type="reset" class="btn btn-primary" type="button">Cancel</button>
                 </div>
                 <div>
