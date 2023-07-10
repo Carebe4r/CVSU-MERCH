@@ -97,22 +97,22 @@
   <section class="ftco-section ftco-no-pb ftco-no-pt bg-light">
     <div class="container">
       <div class="row">
-        <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center"
-          style="background-image: url(images/Featured-4.png);">
+       
         </div>
-        <div class="col-md-7 py-5 wrap-about pb-md-5 ftco-animate">
+        <div class="col-md-12 py-5 wrap-about pb-md-5 ftco-animate">
           <div class="heading-section-bold mb-4 mt-md-5">
             <div class="ml-md-0">
-              <h2 class="mb-4">Welcome to CVSU </h2>
+            <h2 class="mb-4">Welcome to CVSU </h2>
             </div>
           </div>
           <div class="pb-md-5">
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
-              ocean.</p>
-            <p>But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy
-              Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they
-              abused her for their.</p>
+            <p>University Merch Website
+CVSU University Merch Website is your one-stop destination for all the official merchandise of CVSU (Cavite State University).
+ Our mission is to provide high-quality and exclusive merchandise that allows students, faculty,
+  alumni, and fans to showcase their pride and support for CVSU. .</p>
+            <p>Whether you're looking for t-shirts, hoodies, accessories, or other CVSU-themed items, we have a wide range of products to choose from.
+               By purchasing from CVSU University Merch Website, you directly contribute to the development of the university and support various initiatives and programs.
+                Join us in celebrating the CVSU spirit and proudly display your affiliation with our official merchandise!</p>
             <p><a href="#" class="btn btn-primary">Shop now</a></p>
           </div>
         </div>
@@ -120,7 +120,58 @@
     </div>
   </section>
 
+  <div>
 
+
+<h2 class="alayn">Group Members:</h2>
+
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/Person/zy.jpeg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Zyrene Maghuyop</h2>
+      
+      
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/Person/aly.jpeg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Alyssa De Castro</h2>
+
+    
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="images/Person/newo.jpeg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Owen Yap</h2>
+       
+      
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="images/Person/los.jpeg" alt="Sarah" style="width:100%">
+      <div class="container">
+        <h2>Luis Matera</h2>
+       
+      
+      </div>
+    </div>
+  </div>
+</div>
   <section class="ftco-section bg-light">
     <div class="container">
       <div class="row no-gutters ftco-services">
