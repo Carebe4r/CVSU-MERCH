@@ -157,7 +157,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         </div>
                     </li>
                     <li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
-                    <li class="nav-item cta cta-colored"><a href="login.php" class="nav-link">
+                    <li class="nav-item cta cta-colored"><a href="index.php" class="nav-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-person" viewBox="0 0 16 16">
                                 <path

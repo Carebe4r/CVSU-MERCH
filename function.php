@@ -4,7 +4,7 @@ function check_login($con)
 {
 		if(isset($_SESSION['SNO']))
 	{
-		$id = $_SESSION['STUDENT_ID'];
+		$id = $_SESSION['SNO'];
 		$query = "SELECT * FROM users where SNO = '$id' Limit 1";
 
 		$result = mysqli_query($con, $query);
