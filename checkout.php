@@ -99,32 +99,32 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-xl-7 ftco-animate">
-					<form action="#" class="billing-form">
+					<form action="#" class="billing-form" id="billing-form">
 						<h3 class="mb-4 billing-heading">Billing Details</h3>
 						<div class="row align-items-end">
 							<div class="col-md-6">
 								<div class="form-group">
 									<label for="firstname">Firt Name *</label>
-									<input type="text" class="form-control" placeholder="" required>
+									<input type="text" class="form-control" id="firstname" placeholder="" required>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
 									<label for="lastname">Last Name *</label>
-									<input type="text" class="form-control" placeholder="" required>
+									<input type="text" class="form-control" id="lastname" required>
 								</div>
 							</div>
 							<div class="w-100"></div>
 							<div class="col-md-6">
 								<div class="form-group">
 									<label for="streetaddress">Street Address *</label>
-									<input type="text" class="form-control" placeholder="House number and street name"
+									<input type="text" class="form-control" id="streetadd" placeholder="House number and street name"
 										required>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
-									<input type="text" class="form-control"
+									<input type="text" class="form-control" id="apartment"
 										placeholder="Appartment, suite, unit etc: (optional)">
 								</div>
 							</div>
@@ -132,26 +132,26 @@
 							<div class="col-md-6">
 								<div class="form-group">
 									<label for="towncity">Barangay *</label>
-									<input type="text" class="form-control" placeholder="" required>
+									<input type="text" class="form-control" id="brgy" required>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
 									<label for="postcodezip">City *</label>
-									<input type="text" class="form-control" placeholder="" required>
+									<input type="text" class="form-control" id="city" placeholder="" required>
 								</div>
 							</div>
 							<div class="w-100"></div>
 							<div class="col-md-6">
 								<div class="form-group">
 									<label for="phone">Phone *</label>
-									<input type="text" class="form-control" placeholder="" required>
+									<input type="text" class="form-control" id="phone" required>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
 									<label for="emailaddress">Email Address</label>
-									<input type="text" class="form-control" placeholder="">
+									<input type="text" class="form-control" id="email" placeholder="">
 								</div>
 							</div>
 							<div class="w-100"></div>
@@ -218,7 +218,7 @@
 										</div>
 									</div>
 								</div>
-								<p><a href="#" class="btn btn-primary py-3 px-4">Place an order</a></p>
+								<p><a href="index.php" class="btn btn-primary py-3 px-4">Place an order</a></p>
 							</div>
 						</div>
 					</div>
@@ -336,40 +336,62 @@
 	<script src="js/main.js"></script>
 
 	<script>
-		$(document).ready(function () {
 
-			var quantitiy = 0;
-			$('.quantity-right-plus').click(function (e) {
+		// var queryString = window.location.search;
+		// var urlParams = new URLSearchParams(queryString);
+		// var cartData = urlParams.get('cart');
+
+		// var cart = JSON.parse(decodeURIComponent(cartData));
+		// var ca
+
+		$('#billing-form').submit(function(event)) {
+			event.preventDefault();
+
+			var name = $('#firstname').val();
+			var lname = $('#lastname').val();
+			var address = $('#address').val();
+			var apartment = $('#apartment').val();
+			var barangay = $('#brgy').val();
+			var city = $('#city').val();
+			var phone = $('#phone').val();
+			var emailaddress = $('#email').val();
+
+			alert("Thank you for your purchase!")
+		}
+		// $(document).ready(function () {
+
+		// 	var quantitiy = 0;
+		// 	$('.quantity-right-plus').click(function (e) {
 
 				// Stop acting like a button
-				e.preventDefault();
+				// e.preventDefault();
 				// Get the field name
-				var quantity = parseInt($('#quantity').val());
+				// var quantity = parseInt($('#quantity').val());
 
 				// If is not undefined
 
-				$('#quantity').val(quantity + 1);
+				// $('#quantity').val(quantity + 1);
 
 
 				// Increment
 
-			});
+			// });
 
-			$('.quantity-left-minus').click(function (e) {
+			// $('.quantity-left-minus').click(function (e) {
 				// Stop acting like a button
-				e.preventDefault();
+				// e.preventDefault();
 				// Get the field name
-				var quantity = parseInt($('#quantity').val());
+				// var quantity = parseInt($('#quantity').val());
 
 				// If is not undefined
 
 				// Increment
-				if (quantity > 0) {
-					$('#quantity').val(quantity - 1);
-				}
-			});
+		// 		if (quantity > 0) {
+		// 			$('#quantity').val(quantity - 1);
+		// 		}
+		// 	});
 
-		});
+		// });
 	</script>
 
 </body>
