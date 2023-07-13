@@ -1,3 +1,44 @@
+<?php
+session_start();
+include("connection.php");
+include("function.php");
+
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+  //something is entered and will fetch
+  $Uname = $_POST['uname'];
+  $Password = $_POST['psw'];
+
+  if (!empty($Uname) && !empty($Password)) {
+    //read from database
+    $query = "SELECT * FROM users where UNAME = '$Uname' limit 1";
+
+    $result = mysqli_query($con, $query);
+
+    if ($result) {
+      if ($result && mysqli_num_rows($result) > 0) { 
+        $user_data = mysqli_fetch_assoc($result);
+
+        if (($Uname) === "ADMIN" && ($Password) === "ADMIN") {
+          $_SESSION['SNO'] = $user_data['SNO'];
+          header("Location: index.php");
+          die;
+        }
+        if ($user_data['PASSWORDS'] === $Password) {
+          $_SESSION['SNO'] = $user_data['SNO'];
+          header("Location: index.php");
+          die;
+        }
+      }
+    }
+    echo
+      "<script> alert('Wrong Email or Password') </script>";
+  } else {
+    echo
+      "<script> alert('Wrong Email or Password') </script>";
+  }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -116,7 +157,7 @@
                         </div>
                     </li>
                     <li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
-                    <li class="nav-item cta cta-colored"><a href="login.php" class="nav-link">
+                    <li class="nav-item cta cta-colored"><a href="index.php" class="nav-link">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-person" viewBox="0 0 16 16">
                                 <path
@@ -133,7 +174,12 @@
 
     <h2 class="fs-5 text-center my-5">Hi Stingrays! Login Here. </h2>
     <div class="memacontainer mt-5 p-1">
+
+
+        <form  method="post">
+
         <form action="index.php" onsubmit="return login()">
+
             <div class="imgcontainer my-4">
                 <img src="images/img-account.png" alt="Avatar" class="avatar">
             </div>
@@ -147,7 +193,9 @@
 
                 <div class="d-grid gap-2 d-md-block text-center my-5">
                     <button class="btn btn-primary" type="submit">Login</button>
-                    <button type="reset" class="btn btn-primary" type="reset">Cancel</button>
+
+                    <button type="reset" class="btn btn-primary" type="button">Cancel</button>
+
                 </div>
                 <div>
                     <p class="fs-4 mt-5 text-center">Don't have an account? <a href="signup.php">Sign up here!</p>

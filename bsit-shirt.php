@@ -115,21 +115,47 @@
 							</div>
 						</div>
 						<div class="w-100"></div>
+						<form method="post">
 						<div class="input-group col-md-6 d-flex mb-3">
 							<span class="input-group-btn mr-2">
+								
 								<button type="button" class="quantity-left-minus btn" data-type="minus" data-field="">
 									<i class="ion-ios-remove"></i>
 								</button>
-							</span>
-							<input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
-							<span class="input-group-btn ml-2">
+					</span><span>
 								<button type="button" class="quantity-right-plus btn" data-type="plus" data-field="">
 									<i class="ion-ios-add"></i>
 								</button>
 							</span>
+							<br>
+							<span>
+							<input type="text" id="quantity" name="quantty" class="form-control input-number" value="1" min="1" max="100">						
+					</span>
 						</div>
 					</div>
-					<p><a href="cart.php" class="btn btn-black py-3 px-5">Add to Cart</a></p>
+					
+									<input type="hidden" class= "hide" name = "pname" value = "LANYARD">
+									<input type="hidden" class= "hide" name = "pid" value = <?php
+								include("connection.php");
+                        $ssl = "SELECT ID FROM items WHERE ID = 3";
+                        $results = $con->query($ssl);
+                        if ($results->num_rows > 0) {
+                            while ($rows = $results->fetch_assoc()) {
+                                echo $rows["ID"];
+                            }
+                        }
+						?> ><input type="hidden" class= "hide" name = "price" value = <?php
+						include("connection.php");
+				$ssl = "SELECT PRICE FROM items WHERE ID = 3";
+				$results = $con->query($ssl);
+				if ($results->num_rows > 0) {
+					while ($rows = $results->fetch_assoc()) {
+						echo $rows["PRICE"];
+					}
+				}
+				?> >
+					<button type="submit">Add to Cart</button>
+</form>
 				</div>
 			</div>
 		</div>
@@ -156,7 +182,18 @@
 							<h3><a href="bsit-lanyard.php">BSIT Lanyard</a></h3>
 							<div class="d-flex">
 								<div class="pricing">
-									<p class="price"><span>₱75</span></p>
+									<p class="price"><span>₱<?php
+								include("connection.php");
+                        $sql = "SELECT PRICE FROM items WHERE ID = 1";
+                        $result = $con->query($sql);
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                echo $row["PRICE"];
+                            }
+                        } else {
+                            echo "0 result";
+                        }
+						?></span></p>
 								</div>
 							</div>
 							<div class="bottom-area d-flex px-3">
@@ -178,7 +215,18 @@
 							<h3><a href="bshm-lanyard.php">BSIT Shirt</a></h3>
 							<div class="d-flex">
 								<div class="pricing">
-									<p class="price"><span>₱480</span></p>
+									<p class="price"><span>₱<?php
+								include("connection.php");
+                        $sql = "SELECT PRICE FROM items WHERE ID = 3";
+                        $result = $con->query($sql);
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                echo $row["PRICE"];
+                            }
+                        } else {
+                            echo "0 result";
+                        }
+						?></span></p>
 								</div>
 							</div>
 							<div class="bottom-area d-flex px-3">

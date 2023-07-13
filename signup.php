@@ -1,3 +1,50 @@
+<?php
+session_start();
+include("connection.php");
+include("function.php");
+
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+  //something is entered and will fetch
+
+  //studentnumber
+  $SNO = $_POST['SNO'];
+  $Name = $_POST['name'];
+  $uname = $_POST['uname'];
+  $Password = $_POST['psw'];
+  $Repassword = $_POST['psw2'];
+  $duplicate = mysqli_query($con, "SELECT * FROM users WHERE SNO = '$SNO'");
+  $duplicates = mysqli_query($con, "SELECT * FROM users WHERE UNAME = '$uname'");
+  if (mysqli_num_rows($duplicate) > 0) {
+    echo
+      "<script> alert('Student Number already exist') </script>";
+  } else {
+    if (mysqli_num_rows($duplicates) > 0) {
+      echo
+        "<script> alert('Username already exist') </script>";
+    } else {
+      if (!empty($uname) && !empty($SNO) && !empty($Name) && !empty($Password) && !empty($Repassword) && ($Password == $Repassword)) {
+        //will save to database
+        $query = "INSERT INTO users (SNO, NAMES, UNAME, PASSWORDS) VALUES ('$SNO', '$Name', '$uname', '$Password')";
+        mysqli_query($con, $query);
+
+        header("Location: login.php");
+        echo
+          "<script> alert('Registration complete') </script>";
+        die;
+
+      } else {
+        if ($Password !== $Repassword) {
+          echo
+            "<script> alert('Password doesnt match')</script>";
+        } else {
+          echo "<script> alert('please confirm your password')</script>";
+        }
+      }
+    }
+  }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -140,7 +187,7 @@
     </h2>
 
     <div class="memacontainer mt-5 p-1">
-        <form action="/action_page.php" method="post">
+        <form method="post">
             <div class="imgcontainer my-4">
                 <img src="images/img-account.png" alt="Avatar" class="avatar">
             </div>
@@ -152,17 +199,17 @@
                 <label for="uname"><b>Username</b></label>
                 <input class="p-2" type="text" placeholder="Enter Username" name="uname" required>
 
-                <label for="student_ID"><b>Student Number</b></label>
-                <input class="p-2" type="text" placeholder="ex.202112345" name="student_id" required>
+                <label for="SNO"><b>Student Number</b></label>
+                <input class="p-2" type="text" placeholder="ex.202112345" name="SNO" required>
 
                 <label for="psw"><b>Password</b></label>
                 <input class="p-2" type="password" placeholder="Enter Password" name="psw" required>
 
-                <label for="psw"><b>Repeat Password</b></label>
-                <input class="p-2" type="password" placeholder="Enter Password" name="psw" required>
+                <label for="psw2"><b>Repeat Password</b></label>
+                <input class="p-2" type="password" placeholder="Enter Password" name="psw2" required>
 
                 <div class="d-grid gap-2 d-md-block text-center my-5">
-                    <button class="btn btn-primary" type="button">Login</button>
+                    <button class="btn btn-primary" type="submit">Signup</button>
                     <button type="reset" class="btn btn-primary" type="button">Cancel</button>
                 </div>
                 <div>

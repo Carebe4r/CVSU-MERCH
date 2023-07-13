@@ -1,3 +1,9 @@
+<?php
+session_start();
+include("connection.php");
+include("function.php");
+$uid = $_SESSION['SNO'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -98,8 +104,6 @@
 						<table class="table">
 							<thead class="thead-primary">
 								<tr class="text-center">
-									<th>&nbsp;</th>
-									<th>&nbsp;</th>
 									<th>Product name</th>
 									<th>Price</th>
 									<th>Quantity</th>
@@ -107,6 +111,19 @@
 								</tr>
 							</thead>
 							<tbody>
+
+							<?php
+                    $sql = "SELECT PNAME, PRICE, QTY, TOTAL FROM cart where UIDS = '$uid' ";
+                    $result = $con->query($sql);
+
+                    if ($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<tr><td>" . $row["PNAME"] . "</td><td>" . $row["PRICE"] . "</td><td>" . $row["QTY"]. "</td><td>" . $row["TOTAL"] . "</td></tr>";
+                        }
+                        echo "</table>";
+                    }
+                    ?>
+
 								<tr class="text-center">
 									<td class="product-remove"><a href="#"><span class="ion-ios-close"></a></span></td>
 
@@ -150,18 +167,71 @@
 
 									<td class="total">$15.70</td>
 								</tr><!-- END TR-->
+
 							</tbody>
 						</table>
 					</div>
 				</div>
 			</div>
 			<div class="row justify-content-end">
-				<div class="col-lg-12 mt-5 cart-wrap ftco-animate">
+
+				<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
 					<div class="cart-total mb-3">
+						<h3>Coupon Code</h3>
+						<p>Enter your coupon code if you have one</p>
+						<form action="#" class="info">
+							<div class="form-group">
+								<label for="">Coupon code</label>
+								<input type="text" class="form-control text-left px-3" placeholder="">
+							</div>
+						</form>
+					</div>
+					<p><a href="checkout.php" class="btn btn-primary py-3 px-4">Apply Coupon</a></p>
+				</div>
+				<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
+					<div class="cart-total mb-3">
+						<h3>Estimate shipping and tax</h3>
+						<p>Enter your destination to get a shipping estimate</p>
+						<form action="#" class="info">
+							<div class="form-group">
+								<label for="">Country</label>
+								<input type="text" class="form-control text-left px-3" placeholder="">
+							</div>
+							<div class="form-group">
+								<label for="country">State/Province</label>
+								<input type="text" class="form-control text-left px-3" placeholder="">
+							</div>
+							<div class="form-group">
+								<label for="country">Zip/Postal Code</label>
+								<input type="text" class="form-control text-left px-3" placeholder="">
+							</div>
+						</form>
+					</div>
+					<p><a href="checkout.php" class="btn btn-primary py-3 px-4">Estimate</a></p>
+				</div>
+				<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
+			
+
+				<div class="col-lg-12 mt-5 cart-wrap ftco-animate">
+
+					<div class="cart-total mb-3">
+					
 						<h3>Cart Totals</h3>
 						<p class="d-flex">
 							<span>Subtotal</span>
-							<span>$20.60</span>
+							<span>₱<?php
+								include("connection.php");
+                        $sql = "SELECT SUM(Total) as ALLTOTAL FROM cart where UIDS = $uid;";
+                        $result = $con->query($sql);
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                echo $row["ALLTOTAL"];
+                            }
+                        } else {
+                            echo "0 result";
+                        }
+						?></span>
+							
 						</p>
 						<p class="d-flex">
 							<span>Delivery</span>
@@ -174,9 +244,21 @@
 						<hr>
 						<p class="d-flex total-price">
 							<span>Total</span>
-							<span>$17.60</span>
+							<span>₱<?php
+								include("connection.php");
+                        $sql = "SELECT SUM(Total) as ALLTOTAL FROM cart where UIDS = $uid;";
+                        $result = $con->query($sql);
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                echo $row["ALLTOTAL"];
+                            }
+                        } else {
+                            echo "0 result";
+                        }
+						?></span>
 						</p>
 					</div>
+					
 					<p><a href="checkout.php" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
 				</div>
 

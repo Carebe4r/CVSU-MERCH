@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -118,14 +119,31 @@
 							<h3><a href="bsit-lanyard.php" id="bsit_lanyard">BSIT Lanyard</a></h3>
 							<div class="d-flex">
 								<div class="pricing">
-									<p class="price"><span>₱75</span></p>
+								<p class="price"><span>₱<?php
+								include("connection.php");
+                        $sql = "SELECT PRICE FROM items WHERE ID = 1";
+                        $result = $con->query($sql);
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                echo $row["PRICE"];
+                            }
+                        } else {
+                            echo "0 result";
+                        }
+						?></span></p>
+
 								</div>
 							</div>
 							<div class="bottom-area d-flex px-3">
 								<div class="m-auto d-flex">
-									<a href="cart.php" class="buy-now d-flex justify-content-center align-items-center mx-1" onclick="addtocart()">
+
+
+<a href="bsit-lanyard.php" class="buy-now d-flex justify-content-center align-items-center mx-1">
+
+		
 										<span><i class="ion-ios-cart"></i></span>
 									</a>
+
 								</div>
 							</div>
 						</div>
@@ -140,14 +158,26 @@
 							<h3><a href="bshm-lanyard.php">BSHM Lanyard</a></h3>
 							<div class="d-flex">
 								<div class="pricing">
-									<p class="price"><span>₱75</span></p>
+								<p class="price"><span>₱<?php
+								include("connection.php");
+                        $sql = "SELECT PRICE FROM items WHERE ID = 2";
+                        $result = $con->query($sql);
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                echo $row["PRICE"];
+                            }
+                        } else {
+                            echo "0 result";
+                        }
+						?></span></p>
 								</div>
 							</div>
 							<div class="bottom-area d-flex px-3">
 								<div class="m-auto d-flex">
-									<a href="cart.php" class="buy-now d-flex justify-content-center align-items-center mx-1">
+									<a href="bshm-lanyard.php" class="buy-now d-flex justify-content-center align-items-center mx-1">
 										<span><i class="ion-ios-cart"></i></span>
 									</a>
+
 								</div>
 							</div>
 						</div>
@@ -162,7 +192,18 @@
 							<h3><a href="bsit-shirt.php">BSIT Shirt</a></h3>
 							<div class="d-flex">
 								<div class="pricing">
-									<p class="price"><span>₱480</span></p>
+								<p class="price"><span>₱<?php
+								include("connection.php");
+                        $sql = "SELECT PRICE FROM items WHERE ID = 3";
+                        $result = $con->query($sql);
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                echo $row["PRICE"];
+                            }
+                        } else {
+                            echo "0 result";
+                        }
+						?></span></p>
 								</div>
 							</div>
 							<div class="bottom-area d-flex px-3">
