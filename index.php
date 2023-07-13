@@ -6,8 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
 
@@ -38,15 +37,13 @@
 				<div class="col-lg-12 d-block">
 					<div class="row d-flex">
 						<div class="col-md pr-4 d-flex topper align-items-center">
-							<div class="icon mr-2 d-flex justify-content-center align-items-center"><span
-									class="icon-phone2"></span></div>
+							<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
 							<span class="text">+8-7000</span>
 						</div>
 						<div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
 						</div>
 						<div class="col-md pr-4 d-flex topper align-items-center">
-							<div class="icon mr-2 d-flex justify-content-center align-items-center"><span
-									class="icon-paper-plane"></span></div>
+							<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
 							<span class="text">bc.cvsubacoor.merch@cvsu.edu.ph</span>
 						</div>
 					</div>
@@ -57,8 +54,7 @@
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
 			<a class="navbar-brand" href="index.php">CVSU BACOOR MERCH</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu"></span> Menu
 			</button>
 
@@ -66,8 +62,7 @@
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
-							aria-haspopup="true" aria-expanded="false">Shop</a>
+						<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
 						<div class="dropdown-menu" aria-labelledby="dropdown04">
 							<a class="dropdown-item" href="shop.php">Shop</a>
 							<a class="dropdown-item" href="cart.php">Cart</a>
@@ -75,11 +70,15 @@
 						</div>
 					</li>
 					<li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
-					<li class="nav-item cta cta-colored"><a href="login.php" class="nav-link">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-							<path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
-						</svg></a></li>
-
+					<li class="nav-item cta cta-colored dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+								<path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+							</svg></a>
+						<div class="dropdown-menu" aria-labelledby="dropdown04">
+							<a class="dropdown-item" href="shop.php">Admin</a>
+							<a class="dropdown-item" href="logout.php">Logout</a>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -168,12 +167,11 @@
 			<div class="row justify-content-center">
 				<div class="col-md-6 col-lg-3 ftco-animate">
 					<div class="product">
-						<a href="#" class="img-prod"><img class="img-fluid" src="images/featured-1.png"
-								alt="Colorlib Template">
+						<a href="bsit-lanyard.php" class="img-prod"><img class="img-fluid" src="images/featured-1.png" alt="BSIT Lanyard">
 							<div class="overlay"></div>
 						</a>
 						<div class="text py-3 pb-4 px-3 text-center">
-							<h3><a href="#">BSIT Lanyard</a></h3>
+							<h3><a href="bsit-lanyard.php">BSIT Lanyard</a></h3>
 							<div class="d-flex">
 								<div class="pricing">
 									<p class="price"><span>₱75</span></p>
@@ -181,8 +179,7 @@
 							</div>
 							<div class="bottom-area d-flex px-3">
 								<div class="m-auto d-flex">
-									<a href="cart.php"
-										class="buy-now d-flex justify-content-center align-items-center mx-1">
+									<a href="cart.php" class="buy-now d-flex justify-content-center align-items-center mx-1">
 										<span><i class="ion-ios-cart"></i></span>
 									</a>
 								</div>
@@ -192,12 +189,11 @@
 				</div>
 				<div class="col-md-6 col-lg-3 ftco-animate">
 					<div class="product">
-						<a href="#" class="img-prod"><img class="img-fluid" src="images/featured-2.png"
-								alt="Colorlib Template">
+						<a href="bshm-lanyard.php" class="img-prod"><img class="img-fluid" src="images/featured-2.png" alt="BSHM Lanyard">
 							<div class="overlay"></div>
 						</a>
 						<div class="text py-3 pb-4 px-3 text-center">
-							<h3><a href="#">BSHM Lanyard</a></h3>
+							<h3><a href="bshm-lanyard.php">BSHM Lanyard</a></h3>
 							<div class="d-flex">
 								<div class="pricing">
 									<p class="price"><span>₱75</span></p>
@@ -205,8 +201,7 @@
 							</div>
 							<div class="bottom-area d-flex px-3">
 								<div class="m-auto d-flex">
-									<a href="cart.php"
-										class="buy-now d-flex justify-content-center align-items-center mx-1">
+									<a href="cart.php" class="buy-now d-flex justify-content-center align-items-center mx-1">
 										<span><i class="ion-ios-cart"></i></span>
 									</a>
 								</div>
@@ -216,12 +211,11 @@
 				</div>
 				<div class="col-md-6 col-lg-3 ftco-animate">
 					<div class="product">
-						<a href="#" class="img-prod"><img class="img-fluid" src="images/featured-3.png"
-								alt="Colorlib Template">
+						<a href="bsit-shirt.php" class="img-prod"><img class="img-fluid" src="images/featured-3.png" alt="BSIT Shirt">
 							<div class="overlay"></div>
 						</a>
 						<div class="text py-3 pb-4 px-3 text-center">
-							<h3><a href="#">BSIT Shirt</a></h3>
+							<h3><a href="bsit-shirt.php">BSIT Shirt</a></h3>
 							<div class="d-flex">
 								<div class="pricing">
 									<p class="price"><span>₱480</span></p>
@@ -229,8 +223,7 @@
 							</div>
 							<div class="bottom-area d-flex px-3">
 								<div class="m-auto d-flex">
-									<a href="cart.php"
-										class="buy-now d-flex justify-content-center align-items-center mx-1">
+									<a href="cart.php" class="buy-now d-flex justify-content-center align-items-center mx-1">
 										<span><i class="ion-ios-cart"></i></span>
 									</a>
 								</div>
@@ -381,21 +374,23 @@
 							<ul>
 								<li><span class="icon icon-map-marker"></span><span class="text">Cavite State
 										University, Molino IV, Bacoor City, PH</span></li>
-								<li><a href="#"><span class="icon icon-phone"></span><span
-											class="text">+8-7000</span></a></li>
-								<li><a href="#"><span class="icon icon-envelope"></span><span
-											class="text">bc.cvsubacoor.merch@cvsu.edu.ph</span></a></li>
+								<li><a href="#"><span class="icon icon-phone"></span><span class="text">+8-7000</span></a></li>
+								<li><a href="#"><span class="icon icon-envelope"></span><span class="text">bc.cvsubacoor.merch@cvsu.edu.ph</span></a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
+			<hr>
+			</hr>
 			<div class="row">
 				<div class="col-md-12 text-center">
 
 					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> @CVSU-Bacoor</a>
+						<script>
+							document.write(new Date().getFullYear());
+						</script> @CVSU-Bacoor</a>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					</p>
 				</div>
@@ -408,8 +403,7 @@
 	<!-- loader -->
 	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
 			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#F96D00" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
 		</svg></div>
 
 
@@ -426,8 +420,7 @@
 	<script src="js/jquery.animateNumber.min.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/scrollax.min.js"></script>
-	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 	<script src="js/google-map.js"></script>
 	<script src="js/main.js"></script>
 

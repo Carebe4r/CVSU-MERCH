@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Shop | Cavite State University - Bacoor</title>
+	<title>Shirt | Cavite State University - Bacoor</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -76,10 +76,15 @@
 						</div>
 					</li>
 					<li class="nav-item active"><a href="about.php" class="nav-link">About</a></li>
-					<li class="nav-item cta cta-colored"><a href="login.php" class="nav-link">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-							<path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
-						</svg></a></li>
+					<li class="nav-item cta cta-colored dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+								<path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+							</svg></a>
+						<div class="dropdown-menu" aria-labelledby="dropdown04">
+							<a class="dropdown-item" href="shop.php">Admin</a>
+							<a class="dropdown-item" href="index.php">Logout</a>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -90,8 +95,7 @@
 		<div class="container">
 			<div class="row no-gutters slider-text align-items-center justify-content-center">
 				<div class="col-md-9 ftco-animate text-center">
-					<p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home</a></span> <span>Products</span>
-					</p>
+				<p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home</a></span> <span class="mr-2"><a href="index.php">Product</a></span> <span>Shirts</span></p>
 					<h1 class="mb-0 bread">Products</h1>
 				</div>
 			</div>
@@ -112,11 +116,11 @@
 			<div class="row justify-content-center">
 				<div class="col-md-6 col-lg-3 ftco-animate">
 					<div class="product">
-						<a href="#" class="img-prod"><img class="img-fluid" src="images/featured-3.png"
-								alt="Colorlib Template">
+						<a href="bsit-shirt.php" class="img-prod"><img class="img-fluid" src="images/featured-3.png"
+								alt="BSIT Shirt">
 						</a>
 						<div class="text py-3 pb-4 px-3 text-center">
-							<h3><a href="#">BSIT Shirt</a></h3>
+							<h3><a href="bsit-shirt.php">BSIT Shirt</a></h3>
 							<div class="d-flex">
 								<div class="pricing">
 									<p class="price"><span>₱480</span></p>
@@ -202,6 +206,7 @@
 					</div>
 				</div>
 			</div>
+			<hr></hr>
 			<div class="row">
 				<div class="col-md-12 text-center">
 

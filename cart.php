@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Vegefoods - Free Bootstrap 4 Template by Colorlib</title>
+	<title>Cart | Cavite State University - Bacoor Merchandise</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -38,13 +38,14 @@
 				<div class="col-lg-12 d-block">
 					<div class="row d-flex">
 						<div class="col-md pr-4 d-flex topper align-items-center">
-							<div class="icon mr-2 d-flex justify-content-center align-items-center"><span
-									class="icon-phone2"></span></div>
+							<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span>
+							</div>
 							<span class="text">+8-7000</span>
 						</div>
+						<div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
+						</div>
 						<div class="col-md pr-4 d-flex topper align-items-center">
-							<div class="icon mr-2 d-flex justify-content-center align-items-center"><span
-									class="icon-paper-plane"></span></div>
+							<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
 							<span class="text">bc.cvsubacoor.merch@cvsu.edu.ph</span>
 						</div>
 					</div>
@@ -72,10 +73,15 @@
 							<a class="dropdown-item" href="checkout.php">Checkout</a>
 						</div>
 					<li class="nav-item active"><a href="about.php" class="nav-link">About</a></li>
-					<li class="nav-item cta cta-colored"><a href="login.php" class="nav-link">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-							<path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
-						</svg></a></li>
+					<li class="nav-item cta cta-colored dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+								<path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+							</svg></a>
+						<div class="dropdown-menu" aria-labelledby="dropdown04">
+							<a class="dropdown-item" href="shop.php">Admin</a>
+							<a class="dropdown-item" href="index.php">Logout</a>
+						</div>
+					</li>
 
 				</ul>
 			</div>
@@ -296,6 +302,7 @@
 					</div>
 				</div>
 			</div>
+			<hr></hr>
 			<div class="row">
 				<div class="col-md-12 text-center">
 

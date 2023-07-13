@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Shop | Cavite State University - Bacoor</title>
+	<title>Home | Cavite State University - Bacoor Merchandise</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -37,8 +37,7 @@
 				<div class="col-lg-12 d-block">
 					<div class="row d-flex">
 						<div class="col-md pr-4 d-flex topper align-items-center">
-							<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span>
-							</div>
+							<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
 							<span class="text">+8-7000</span>
 						</div>
 						<div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
@@ -77,7 +76,7 @@
 							</svg></a>
 						<div class="dropdown-menu" aria-labelledby="dropdown04">
 							<a class="dropdown-item" href="shop.php">Admin</a>
-							<a class="dropdown-item" href="index.php">Logout</a>
+							<a class="dropdown-item" href="login.php">Login</a>
 						</div>
 					</li>
 				</ul>
@@ -86,33 +85,90 @@
 	</nav>
 	<!-- END nav -->
 
-	<div class="hero-wrap hero-bread" style="background-image: url('images/product-header-vivid.png');">
-		<div class="container">
-			<div class="row no-gutters slider-text align-items-center justify-content-center">
-				<div class="col-md-9 ftco-animate text-center">
-					<p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home</a></span> <span>Products</span>
-					</p>
-					<h1 class="mb-0 bread">Products</h1>
+	<section id="home-section" class="hero">
+		<div class="home-slider owl-carousel">
+			<div class="slider-item" style="background-image: url(images/merch/1.png);">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+					</div>
+				</div>
+			</div>
+
+			<div class="slider-item" style="background-image: url(images/merch/2.png);">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+					</div>
+				</div>
+			</div>
+			<div class="slider-item" style="background-image: url(images/merch/3.png);">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
 	<section class="ftco-section">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-10 mb-5 text-center">
-					<ul class="product-category">
-						<li><a href="shop.php" class="active">All</a></li>
-						<li><a href="lanyards.php">Lanyards</a></li>
-						<li><a href="shirts.php">Shirts</a></li>
-					</ul>
+			<div class="row no-gutters ftco-services justify-content-center">
+				<div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+					<div class="media block-6 services mb-md-0 mb-4">
+						<div class="icon bg-color-1 active d-flex justify-content-center align-items-center mb-2">
+							<span class="flaticon-shipped"></span>
+						</div>
+						<div class="media-body">
+							<h3 class="heading">Free Shipping</h3>
+							<span>On order over P100</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+					<div class="media block-6 services mb-md-0 mb-4">
+						<div class="icon bg-color-3 d-flex justify-content-center align-items-center mb-2">
+							<span class="flaticon-award"></span>
+						</div>
+						<div class="media-body">
+							<h3 class="heading">Superior Quality</h3>
+							<span>Quality Products</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+					<div class="media block-6 services mb-md-0 mb-4">
+						<div class="icon bg-color-4 d-flex justify-content-center align-items-center mb-2">
+							<span class="flaticon-customer-service"></span>
+						</div>
+						<div class="media-body">
+							<h3 class="heading">Support</h3>
+							<span>24/7 Support</span>
+						</div>
+					</div>
 				</div>
 			</div>
+		</div>
+	</section>
+
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center mb-3 pb-3">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<span class="subheading">Featured Products</span>
+					<h2 class="mb-4">Products</h2>
+					<p> Hey Stingrays! We have the latest and greatest for the new school year.</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 col-lg-3 ftco-animate">
 					<div class="product">
 						<a href="bsit-lanyard.php" class="img-prod"><img class="img-fluid" src="images/featured-1.png" alt="BSIT Lanyard">
+							<div class="overlay"></div>
 						</a>
 						<div class="text py-3 pb-4 px-3 text-center">
 							<h3><a href="bsit-lanyard.php">BSIT Lanyard</a></h3>
@@ -176,7 +232,90 @@
 					</div>
 				</div>
 			</div>
+		</div>
 	</section>
+
+	<section class="container text-center">
+		<img src="images/Featured-4.png" width="100%">
+	</section>
+
+	<section class="ftco-section testimony-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section ftco-animate text-center">
+					<span class="subheading">Testimony</span>
+					<h2 class="mb-4">Our fellow Stingray says</h2>
+					<p> Comment Section </p>
+				</div>
+			</div>
+			<div class="row ftco-animate">
+				<div class="col-md-12">
+					<div class="carousel-testimony owl-carousel">
+						<div class="item">
+							<div class="testimony-wrap p-4 pb-5">
+								<div class="user-img mb-5" style="background-image: url(images/Person/person-1.jpg)">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text text-center">
+									<p class="mb-5 pl-4 line"> I don’t like the way you dress.
+										I don’t even like your makeup, but I love you. </p>
+									<p class="name">Rico Yan</p>
+									<span class="position">BSIT 2-6</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap p-4 pb-5">
+								<div class="user-img mb-5" style="background-image: url(images/Person/person-2.jpg)">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text text-center">
+									<p class="mb-5 pl-4 line"> Ayoko na po.</p>
+									<p class="name">Zyrene Magz</p>
+									<span class="position">BSIT 2-6</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap p-4 pb-5">
+								<div class="user-img mb-5" style="background-image: url(images/Person/person-3.jpg)">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text text-center">
+									<p class="mb-5 pl-4 line">Tama na po.</p>
+									<p class="name">Maria Clara</p>
+									<span class="position">BSIT 2-5</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap p-4 pb-5">
+								<div class="user-img mb-5" style="background-image: url(images/Person/person-4.jpg)">
+									<span class="quote d-flex align-items-center justify-content-center">
+										<i class="icon-quote-left"></i>
+									</span>
+								</div>
+								<div class="text text-center">
+									<p class="mb-5 pl-4 line"> Saigo Kito wa tabako no flavor gaashita.</p>
+									<p class="name">Simi Simp</p>
+									<span class="position">BSHM 1-5</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr>
+
 
 	<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
 		<div class="container py-4">
@@ -242,7 +381,8 @@
 					</div>
 				</div>
 			</div>
-			<hr></hr>
+			<hr>
+			</hr>
 			<div class="row">
 				<div class="col-md-12 text-center">
 
@@ -257,8 +397,6 @@
 			</div>
 		</div>
 	</footer>
-
-
 
 
 
