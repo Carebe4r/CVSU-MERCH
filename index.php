@@ -56,7 +56,7 @@
 	</div>
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
-			<a class="navbar-brand" href="index.html">CVSU BACOOR MERCH</a>
+			<a class="navbar-brand" href="index.php">CVSU BACOOR MERCH</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
 				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu"></span> Menu
@@ -64,17 +64,17 @@
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+					<li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
 							aria-haspopup="true" aria-expanded="false">Shop</a>
 						<div class="dropdown-menu" aria-labelledby="dropdown04">
-							<a class="dropdown-item" href="shop.html">Shop</a>
-							<a class="dropdown-item" href="cart.html">Cart</a>
-							<a class="dropdown-item" href="checkout.html">Checkout</a>
+							<a class="dropdown-item" href="shop.php">Shop</a>
+							<a class="dropdown-item" href="cart.php">Cart</a>
+							<a class="dropdown-item" href="checkout.php">Checkout</a>
 						</div>
 					</li>
-					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
 					<li class="nav-item cta cta-colored"><a href="login.php" class="nav-link">
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
 							<path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
@@ -181,7 +181,7 @@
 							</div>
 							<div class="bottom-area d-flex px-3">
 								<div class="m-auto d-flex">
-									<a href="cart.html"
+									<a href="cart.php"
 										class="buy-now d-flex justify-content-center align-items-center mx-1">
 										<span><i class="ion-ios-cart"></i></span>
 									</a>
@@ -205,7 +205,7 @@
 							</div>
 							<div class="bottom-area d-flex px-3">
 								<div class="m-auto d-flex">
-									<a href="cart.html"
+									<a href="cart.php"
 										class="buy-now d-flex justify-content-center align-items-center mx-1">
 										<span><i class="ion-ios-cart"></i></span>
 									</a>
@@ -229,7 +229,7 @@
 							</div>
 							<div class="bottom-area d-flex px-3">
 								<div class="m-auto d-flex">
-									<a href="cart.html"
+									<a href="cart.php"
 										class="buy-now d-flex justify-content-center align-items-center mx-1">
 										<span><i class="ion-ios-cart"></i></span>
 									</a>
@@ -326,22 +326,10 @@
 
 	<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
 		<div class="container py-4">
-			<div class="row d-flex justify-content-center py-5">
-				<div class="col-md-6">
-					<h2 style="font-size: 22px;" class="mb-0">Subcribe to our Newsletter</h2>
-					<span>Get e-mail updates about our latest shops and special offers</span>
-				</div>
-				<div class="col-md-6 d-flex align-items-center">
-					<form action="#" class="subscribe-form">
-						<div class="form-group d-flex">
-							<input type="text" class="form-control" placeholder="Enter email address">
-							<input type="submit" value="Subscribe" class="submit px-3">
-						</div>
-					</form>
-				</div>
-			</div>
+			<div class="row d-flex justify-content-center py-5"></div>
 		</div>
 	</section>
+
 	<footer class="ftco-footer ftco-section">
 		<div class="container">
 			<div class="row">
@@ -366,10 +354,10 @@
 					<div class="ftco-footer-widget mb-4 ml-md-5">
 						<h2 class="ftco-heading-2">Menu</h2>
 						<ul class="list-unstyled">
-							<li><a href="index.html" class="py-2 d-block">Home</a></li>
-							<li><a href="shop.html" class="py-2 d-block">Shop</a></li>
-							<li><a href="about.html" class="py-2 d-block">About</a></li>
-							<li><a href="cart.html" class="py-2 d-block">Cart</a></li>
+							<li><a href="index.php" class="py-2 d-block">Home</a></li>
+							<li><a href="shop.php" class="py-2 d-block">Shop</a></li>
+							<li><a href="about.php" class="py-2 d-block">About</a></li>
+							<li><a href="cart.php" class="py-2 d-block">Cart</a></li>
 						</ul>
 					</div>
 				</div>
@@ -380,7 +368,7 @@
 							<ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
 								<li><a href="#" class="py-2 d-block">Shipping Information</a></li>
 								<li><a href="#" class="py-2 d-block">Returns &amp; Exchange</a></li>
-								<li><a href="#" class="py-2 d-block">Terms &amp; Conditions</a></li>
+								<li><a href="termsandconditions.php" class="py-2 d-block">Terms &amp; Conditions</a></li>
 								<li><a href="#" class="py-2 d-block">Privacy Policy</a></li>
 							</ul>
 						</div>
@@ -407,7 +395,7 @@
 
 					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> All rights reserved</a>
+						<script>document.write(new Date().getFullYear());</script> @CVSU-Bacoor</a>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					</p>
 				</div>
