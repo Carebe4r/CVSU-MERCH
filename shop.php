@@ -115,7 +115,7 @@
 						<a href="bsit-lanyard.php" class="img-prod"><img class="img-fluid" src="images/featured-1.png" alt="BSIT Lanyard">
 						</a>
 						<div class="text py-3 pb-4 px-3 text-center">
-							<h3><a href="bsit-lanyard.php">BSIT Lanyard</a></h3>
+							<h3><a href="bsit-lanyard.php" id="bsit_lanyard">BSIT Lanyard</a></h3>
 							<div class="d-flex">
 								<div class="pricing">
 									<p class="price"><span>₱75</span></p>
@@ -123,7 +123,7 @@
 							</div>
 							<div class="bottom-area d-flex px-3">
 								<div class="m-auto d-flex">
-									<a href="cart.php" class="buy-now d-flex justify-content-center align-items-center mx-1">
+									<a href="cart.php" class="buy-now d-flex justify-content-center align-items-center mx-1" onclick="addtocart()">
 										<span><i class="ion-ios-cart"></i></span>
 									</a>
 								</div>
@@ -268,7 +268,7 @@
 			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
 		</svg></div>
 
-
+	<script src="js/cart.js" async></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
