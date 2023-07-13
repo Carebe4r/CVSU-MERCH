@@ -13,7 +13,7 @@ include("function.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/admin.css">
-    <script type="text/javascript" src="admin.js"></script>
+    <script type="text/javascript" src="js/admin.js"></script>
     <title>Admin Dashboard</title>
 
 </head>
@@ -21,7 +21,7 @@ include("function.php");
 <body>
     <div class="container">
         <div class="sidebar">
-            <h2>Admin Dashboard</h2>
+            <h2>Admin</h2>
             <div class="admin-card">
                 <i class="fas fa-calendar-check"></i>
                 <h3>Accounts</h3>
@@ -39,22 +39,21 @@ include("function.php");
                 <i class="fas fa-calendar-times"></i>
                 <h3>Check-out</h3>
                 <p>Manage the check-out process .</p>
-                <a href="#" class="btn" id="checkOutBtn">Go to Check-out</a>
+                <a href="#" class="btn" id="checkOutBtn">Check-out</a>
             </div>
             <div class="admin-card">
                 <i class="fas fa-bed"></i>
-                <h3>Room Categories</h3>
-                <p>Manage different room categories and their availability.</p>
-                <a href="#" class="btn" id="roomCategoriesBtn">Go to Room Categories</a>
+                <h3>Categories</h3>
+                <p>Manage categories.</p>
+                <a href="#" class="btn" id="roomCategoriesBtn">Categories</a>
             </div>
             <div class="admin-card">
                 <i class="fas fa-door-open"></i>
-                <a href="index-admin.php" class="btn" id="roomsBtn">Logout</a>
+                <a href="index.php" class="btn" id="roomsBtn">Logout</a>
             </div>
         </div>
         <div class="content">
-            <h1>Welcome to the Admin Dashboard</h1>
-            <p>This is your central hub for managing the hotel's operations.</p>
+            <h1>Dashboard</h1>
             <table id="bookingsTable" style="display: none;">
                 <thead>
                     <tr>

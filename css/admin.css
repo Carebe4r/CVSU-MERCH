@@ -20,7 +20,7 @@
 
  .sidebar {
     flex: 0 0 25%;
-    background-color: #fff;
+    background-color: #99d554de;
     padding: 20px;
     border-radius: 6px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -31,6 +31,8 @@
  .sidebar h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
  }
 
  .admin-card {
@@ -73,16 +75,17 @@
 
  .btn {
     display: inline-block;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #99d554de;
+    color: #333;
+    padding: 10px 15px;
     border-radius: 4px;
     text-decoration: none;
     transition: background-color 0.3s ease;
  }
 
  .btn:hover {
-    background-color: #555;
+    background-color: #a9c995;
+    color:#fff;
  }
 
  table {
@@ -94,9 +97,9 @@
  th, td {
     padding: 10px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #bebebe;
  }
 
  th {
-    background-color: #f2f2f2;
+    background-color: #99d554de;
  }
