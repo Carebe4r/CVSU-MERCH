@@ -29,6 +29,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST" ){
 
 <head>
 	<title>BSIT Lanyard | Cavite State University Bacoor</title>
+	<link rel="icon" type="image/x-icon" href="images/cvsu-logo.png">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 

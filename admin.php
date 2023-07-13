@@ -15,7 +15,7 @@ include("function.php");
     <link rel="stylesheet" type="text/css" href="css/admin.css">
     <script type="text/javascript" src="js/admin.js"></script>
     <title>Admin Dashboard</title>
-
+    <link rel="icon" type="image/x-icon" href="images/cvsu-logo.png">
 </head>
 
 <body>

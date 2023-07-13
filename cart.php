@@ -9,6 +9,7 @@ $uid = $_SESSION['SNO'];
 
 <head>
 	<title>Cart | Cavite State University - Bacoor Merchandise</title>
+	<link rel="icon" type="image/x-icon" href="images/cvsu-logo.png">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
