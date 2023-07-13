@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>About | Cavite State University - Bacoor Merchandise </title>
+  <title>Terms and Conditions | Cavite State University - Bacoor Merchandise </title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -63,25 +63,24 @@
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
-							aria-haspopup="true" aria-expanded="false">Shop</a>
-						<div class="dropdown-menu" aria-labelledby="dropdown04">
-							<a class="dropdown-item" href="shop.html">Shop</a>
-							<a class="dropdown-item" href="cart.html">Cart</a>
-							<a class="dropdown-item" href="checkout.html">Checkout</a>
-						</div>
-					</li>
-					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-					<li class="nav-item cta cta-colored"><a href="login.php" class="nav-link">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Shop</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown04">
+              <a class="dropdown-item" href="shop.html">Shop</a>
+              <a class="dropdown-item" href="cart.html">Cart</a>
+              <a class="dropdown-item" href="checkout.html">Checkout</a>
+            </div>
+          </li>
+          <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item cta cta-colored"><a href="login.php" class="nav-link">
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
 							<path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
 						</svg></a></li>
-
-				</ul>
-			</div>
+        </ul>
+      </div>
     </div>
   </nav>
   <!-- END nav -->
@@ -90,8 +89,8 @@
     <div class="container">
       <div class="row no-gutters slider-text align-items-center justify-content-center">
         <div class="col-md-9 ftco-animate text-center">
-          <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>About us</span></p>
-          <h1 class="mb-0 bread">About us</h1>
+          <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span></p>
+          <h1 class="mb-0 bread">Terms and Conditions</h1>
         </div>
       </div>
     </div>
@@ -100,23 +99,36 @@
   <section class="ftco-section ftco-no-pb ftco-no-pt bg-light">
     <div class="container">
       <div class="row">
-        <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center"
+        <!-- <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center"
           style="background-image: url(images/Featured-4.png);">
-        </div>
+        </div> -->
         <div class="col-md-7 py-5 wrap-about pb-md-5 ftco-animate">
           <div class="heading-section-bold mb-4 mt-md-5">
             <div class="ml-md-0">
-              <h2 class="mb-4">Welcome to CVSU </h2>
+              <h2 class="mb-4">Let's explore the Terms! </h2>
             </div>
           </div>
           <div class="pb-md-5">
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
-              ocean.</p>
-            <p>But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy
-              Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they
-              abused her for their.</p>
-            <p><a href="#" class="btn btn-primary">Shop now</a></p>
+            <p>1. The Website and all stipulations herein refer to the Terms and Use applicable to all guest or Registtered User. All users are required to read carefully these terms of use before using the Website.The use of Website indicates that the user accepts and abides with the terms of use.
+
+                <br> <br>In case user does not agree with the terms of use, user should immediately cease using the website.</p>
+
+                <p>2. The user is granted a non-transferable and revocable license to use the website under these terms of use, for the purpose of purchasing any item that are for sale on the Website.</p>
+
+                <p>3. The Website is operated by Cavite State University - Bacoor Campus, an educational institution organized and existing by under the laws of the Philippines, with the head campus address at Indang, Cavite, and with the sattelite campus at Soldiers Hills IV, Molino VI, Bacoor City, Cavite.  </p>
+
+                <p>4. CvSU - Bacoor Campus reserves the right to change, alter, modify or remove the terms of use at any time without prior notice to the user.</p>
+
+                <p>5. Registered User is solely responsible for its access to the Website which releases CvSU - Bacoor Campus from any liability in case any damage<br> that may result to user for any unathorized access.</p>
+
+                <p>6. User agress to comply at all times with any instructions for use of the website which CvSU - Bacoor Campus may implement from time to time.</p>
+
+                <p>7. CvSU - Bacoor Campus and its licensors make no warranty that the item description or quality of the item will meet the Registered User's requirements.</p>
+
+                <p>8. The Terms of Use, Online Selling Policy and all transactions in the Website shall be governed by the laws of the Republic of the Philippines.</p>
+
+                <p>9. In the event that any of the terms herein or policy should be declared contrary to law or public policy, or is otherwise declared invalid or unenforceable, such term or policy shall not affect the validity of the remaining terms of use which shall remain in full force and effect and continue to be binding and enforceable between Users, whether guest or Registered User.</p>
+
           </div>
         </div>
       </div>
