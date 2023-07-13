@@ -133,21 +133,21 @@
 
     <h2 class="fs-5 text-center my-5">Hi Stingrays! Login Here. </h2>
     <div class="memacontainer mt-5 p-1">
-        <form action="/action_page.php" method="post">
+        <form action="index.php" onsubmit="return login()">
             <div class="imgcontainer my-4">
                 <img src="images/img-account.png" alt="Avatar" class="avatar">
             </div>
 
             <div class="container ">
                 <label for="uname"><b>Username</b></label>
-                <input class="p-2" type="text" placeholder="Enter Username" name="uname" required>
+                <input class="p-2" type="text" id="username" placeholder="Enter Username" name="uname">
 
                 <label for="psw"><b>Password</b></label>
-                <input class="center-block p-2" type="password" placeholder="Enter Password" name="psw" required>
+                <input class="center-block p-2" type="password" id="password" placeholder="Enter Password" name="psw">
 
                 <div class="d-grid gap-2 d-md-block text-center my-5">
-                    <button class="btn btn-primary" type="button">Login</button>
-                    <button type="reset" class="btn btn-primary" type="button">Cancel</button>
+                    <button class="btn btn-primary" type="submit">Login</button>
+                    <button type="reset" class="btn btn-primary" type="reset">Cancel</button>
                 </div>
                 <div>
                     <p class="fs-4 mt-5 text-center">Don't have an account? <a href="signup.php">Sign up here!</p>
@@ -269,5 +269,26 @@
     <script src="js/main.js"></script>
 
 </body>
+
+<script>
+    function login() {
+        const username = document.getElementById("username");
+        const password = document.getElementById("password");
+
+        if (username.value.trim() == "") {
+            alert("please enter a username");
+            event.preventDefault();
+            return false;
+        }
+        else if (password.value.trim() == "") {
+            alert("please enter a password");
+            event.preventDefault();
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+</script>
 
 </html>
