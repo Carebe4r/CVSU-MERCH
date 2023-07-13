@@ -153,11 +153,15 @@
     <div class="container">
       <div class="row">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div class="col-md-5 p-md-5 my-5 img img-2 d-flex justify-content-center align-items-center"
           style="background-image: url(images/about-img.png);">
 =======
        
 >>>>>>> 90da1f8 (about)
+=======
+       
+>>>>>>> 90da1f8ef81f9fd5a21f7d4a5e1465300d0ddec5
         </div>
         <div class="col-md-12 py-5 wrap-about pb-md-5 ftco-animate">
           <div class="heading-section-bold mb-4 mt-md-5">
@@ -167,6 +171,7 @@
           </div>
           <div class="pb-md-5">
             <p>University Merch Website
+<<<<<<< HEAD
 <<<<<<< HEAD
               CVSU University Merch Website is your one-stop destination for all the official merchandise of CVSU
               (Cavite State University).
@@ -179,6 +184,8 @@
               Join us in celebrating the CVSU spirit and proudly display your affiliation with our official merchandise!
             </p>
 =======
+=======
+>>>>>>> 90da1f8ef81f9fd5a21f7d4a5e1465300d0ddec5
 CVSU University Merch Website is your one-stop destination for all the official merchandise of CVSU (Cavite State University).
  Our mission is to provide high-quality and exclusive merchandise that allows students, faculty,
   alumni, and fans to showcase their pride and support for CVSU. .</p>
@@ -193,6 +200,7 @@ CVSU University Merch Website is your one-stop destination for all the official 
     </div>
   </section>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   <div class="ftco-section my-5">
     <h2 class="alayn">Group Members:</h2>
@@ -209,6 +217,10 @@ CVSU University Merch Website is your one-stop destination for all the official 
 =======
   <div>
 
+=======
+  <div>
+
+>>>>>>> 90da1f8ef81f9fd5a21f7d4a5e1465300d0ddec5
 
 <h2 class="alayn">Group Members:</h2>
 
